@@ -1,0 +1,177 @@
+Ans 1
+
+This [] is empty list value, which is a list value that contains no items. This is similar to how '  ' is the empty string value.
+
+Ans 2
+
+spam = [2,4,6,8,10]
+spam[2]= "hello"
+spam
+
+Ans 3 
+
+int(int('3'*2)/11) = 33/11 = 3 , So value of 3rd index wil be printed.
+
+spam = ['a', 'b', 'c', 'd']
+spam[int(int('3'*2)/11)]
+
+Ans 4
+
+It will print last value of list
+
+spam[-1]
+
+   
+
+Ans 5
+
+It will print values of index value 0 and 1
+
+spam[:2]
+
+   
+
+   
+
+Ans 6
+
+index value of cat is 1
+
+bacon = ['3.14', 'cat','11','cat', True]
+i = bacon.index('cat')
+i
+
+Ans 7
+
+99 is added at end of list
+
+bacon.append(99)
+
+bacon
+
+   
+
+Ans  8
+
+It scans for 'cat' from the starting of the list and it removes it but it does not remove multiple same elements in list.
+
+bacon.remove('cat')
+bacon
+
+    
+
+Ans  9
+
+List concatenation - It is used to merge two or more list.
+
+
+l1 = [1,2,3,4,5]
+l2 = [6,7,8,9,10]
+concatinated_list = l1+l2
+concatinated_list
+
+List replication - It copies the whole list multiple times.
+
+def replication(li1):
+    li_copy = [i for i in li1]
+    return li_copy
+  
+li1 = [4, 8, 2, 10, 15, 18]
+li2 = replication(li1)
+print("Original List:", li1)
+print("After replicating:", li2)
+
+   
+
+Ans 10
+
+The difference is that with append, you just add a new entry at the end of the list. With insert(position, new_entry) you can create a new entry exactly in the position you want.
+
+l1 = [1,2,3,4,5]
+l1.append(6)
+print(f"Appended list {l1}")
+l2 = [6,7,8,9,10]
+l2.insert(2,10)
+print(f"List using insert {l2}")
+
+   
+
+Ans 11
+
+Method 1 : using remove()- method removes the first matching value
+
+l1 = [1,2,3,4,5]
+l1.remove(2)
+print(f"Removed 2 from list {l1}")
+
+Method 2 : using pop() -method removes the item at a specified index 
+
+l1 = [1,2,3,4,5]
+l1.pop(2)
+print(f"pop 3 from list {l1}")
+
+    
+
+Ans 12
+
+ Lists are similar to strings, which are ordered sets of characters, except that the elements of a list can have any type.
+
+   
+
+Ans 13
+
+List has mutable nature i.e., list can be changed or modified after its creation according to needs whereas tuple has immutable nature i.e., tuple can’t be changed or modified after its creation.
+
+   
+
+Ans 14
+
+t = (42)
+print(t)
+
+   
+
+Ans 15
+
+list value in tuple form
+
+lst = [1, 2, 3, 4, 5, 6, 7]
+print(tuple(lst))
+
+tuple value in list form?
+
+tuple value in list form
+
+tup = (1, 2, 3, 4, 5, 6, 7 );
+print (list(tup))
+
+   
+
+Ans 16
+
+Variables that contain list values may contain any other types of values like tuple, dictionary, boolean, float, string etc.
+
+a = "this is string"
+b = {"car": "fortuner", "model":"2021", "engine":"petrol"}
+c = (1,2,3,4)
+d = True
+
+list = [a,b,c,d]
+
+   
+
+Ans 17
+
+A shallow copy constructs a new compound object and then inserts references into it to the objects found in the original.
+
+A deep copy constructs a new compound object and then, recursively, inserts copies into it of the objects found in the original.
+
+import copy 
+
+li1 = [1, 2, [3,5], 4]
+    
+li2 = copy.copy(li1) 
+print("Shallow copy",li2)
+  
+li3 = copy.deepcopy(li1) 
+print("Deep copy",li3)
